@@ -26,7 +26,10 @@ class Queue:
             while temp.link!=None:
                 old = temp
                 temp = temp.link
-    
+            print(temp.data)
+            old.link = temp.link 
+            self.front = old
+        
     def isEmpty(self):
         if self.front is None and self.rear is None:
             print("Yes")
@@ -48,6 +51,7 @@ q = Queue()
 q.push_queue(1)
 q.push_queue(2)
 q.push_queue(3)
-# q.pop_queue()
+q.pop_queue()
+q.pop_queue()
 q.pop_queue()
 q.display_queue()
