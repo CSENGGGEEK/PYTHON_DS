@@ -36,11 +36,11 @@ class Queue:
         else:
             print("No!!")
 
-    def display_queue(self):
-        temp = self.rear 
+    def display_queue(self): 
         if self.front is None and self.rear is None:
             print("The queue is empty !!")
         else:
+            temp = self.rear
             while temp.link!=None:
                 print(temp.data,end=" ")
                 temp = temp.link
