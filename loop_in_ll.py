@@ -8,3 +8,4 @@ def detect_loop(self):
              return 1
         else:
             visited_nodes[hash(temp.data)] = True
+        temp = temp.link
